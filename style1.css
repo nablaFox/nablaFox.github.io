@@ -5,10 +5,10 @@ body {
 p {
     color: white;
     font-family: "Romantic", sans-serif;
-    font-size: 15pt;
+    font-size: 3vh;
     margin: 0;
     position: absolute;
-    top: 90%;
+    top: 85%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
