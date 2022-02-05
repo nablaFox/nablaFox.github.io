@@ -5,10 +5,10 @@ body {
 p {
     color: white;
     font-family: "Romantic", sans-serif;
-    font-size: 7vh;
+    font-size: 20pt;
     margin: 0;
     position: absolute;
-    top: 75%;
+    top: 80%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -24,8 +24,8 @@ p {
 }
 
 #heart {
-    height: 20vh;
-    width: 20vh;
+    height: 140px;
+    width: 140px;
     background: #f20044;
     position: relative;
     transform: rotate(-45deg);
@@ -48,8 +48,8 @@ p {
 #heart::before{
     content: '';
     position: absolute;
-    height: 20vh;
-    width: 20vh;
+    height: 140px;
+    width: 140px;
     background: #f20044;
     top: -50%;
     border-radius: 50vh;
@@ -59,8 +59,8 @@ p {
 #heart::after{
     content: '';
     position: absolute;
-    height: 20vh;
-    width: 20vh;
+    height: 140px;
+    width: 140px;
     background: #f20044;
     right: -50%;
     border-radius: 50vh;
