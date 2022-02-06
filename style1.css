@@ -14,6 +14,10 @@ p {
     transform: translate(-50%, -50%);
 }
 
+.anto {
+    top: 85%
+}
+
 .parent {
     margin: 0;
     padding: 0;
