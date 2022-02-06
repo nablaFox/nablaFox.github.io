@@ -5,7 +5,8 @@ body {
 p {
     color: white;
     font-family: "Romantic", sans-serif;
-    font-size: 20pt;
+    font-family: 'Winter', sans-serif;
+    font-size: 21pt;
     margin: 0;
     position: absolute;
     top: 80%;
@@ -15,7 +16,7 @@ p {
 }
 
 .anto {
-    top: 88%;
+    top: 85%;
 }
 
 .parent {
