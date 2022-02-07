@@ -2,19 +2,23 @@
 <html>
 <head>
 <link rel = "stylesheet" href = "style1.css">
-<link href="http://fonts.cdnfonts.com/css/romantic" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="google" content="notranslate">
 </head>
 <body>
-    
-    
-    <p>Ti Amo Peyton</p>
-    <p class = "anto">~Anto</p>
-    <div class = "parent">
-        <div id = "heart"></div>
-    </div>
 
+    <script>
+        function displayAnto() {
+            document.getElementById("demo").innerHTML = "~Anto";
+            document.getElementById("demo").style.animation = "fade-in 3s linear forwards";
+        }
+    </script>
+
+    <p>Ti Amo Peyton</p>
+    <P class = "anto" id = "demo"></P>
+    <div class = "parent">
+        <div id = "heart" onclick = "displayAnto()"></div>
+    </div>
 
 </body>
 </html>
