@@ -14,8 +14,22 @@ p {
     transform: translate(-50%, -50%);
 }
 
+@font-face {
+    font-family: 'Romantic';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Romantic'), url('https://fonts.cdnfonts.com/s/53850/Romantic.woff') format('woff');
+}
+
+@keyframes fade-in {
+    0% {opacity: 0;}
+    50%{opacity: 0.4}
+    100%{opacity: 1;}
+}
+
 .anto {
-    top: 85%;
+    top: 84%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .parent {
