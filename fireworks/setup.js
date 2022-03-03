@@ -36,7 +36,7 @@ function StartFireworks() {
     document.body.style.animation = "changebg 4s forwards";
 }
 
-var eventTime = new Date("March 3, 2022 21:30:00").getTime();
+var eventTime = new Date("March 3, 2022 21:34:00").getTime();
 currentTime = new Date().getTime();
 deltaTime = eventTime - currentTime;
 const myTimeout = setTimeout(StartFireworks, deltaTime);
