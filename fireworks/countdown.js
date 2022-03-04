@@ -1,4 +1,4 @@
-var countDownDate = new Date("March 4, 2022 16:33:03").getTime();
+var countDownDate = new Date("March 7, 2022 00:00:03").getTime();
 
 let now = new Date().getTime();
 let distance = countDownDate - now;
