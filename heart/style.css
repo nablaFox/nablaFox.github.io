@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+body {
+    background: #0b1522;
+}
+
+.LoveText {
+    color: white;
+    font-size: 4vh;
+    font-family: "romantic", sans-serif;
+    margin: 0;
+    position: absolute;
+    top: 78%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+#signature {
+    top: 86%;
+    font-family: 'Nunito', sans-serif;
+}
+
+.HeartContainer {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#heart {
+    height: 19vh;
+    width: 19vh;
+    background: #f20044;
+    position: relative;
+    transform: rotate(-45deg);
+    box-shadow: -1.3vh 1.3vh 13vh #f20044;
+    animation: heart 0.6s linear infinite;
+}
+
+#heart::before{
+    content: '';
+    position: absolute;
+    height: 19vh;
+    width: 19vh;
+    background: #f20044;
+    top: -50%;
+    border-radius: 50vh;
+    box-shadow: -1.3vh -1.3vh 13vh #f20044;
+}
+
+#heart::after{
+    content: '';
+    position: absolute;
+    height: 19vh;
+    width: 19vh;
+    background: #f20044;
+    right: -50%;
+    border-radius: 50vh;
+    box-shadow: 1.3vh 1.3vh 13vh #f20044;
+}
+
+@font-face {
+    font-family: 'Romantic';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Romantic'), url('https://fonts.cdnfonts.com/s/53850/Romantic.woff') format('woff');
+}
+
+@keyframes heart{
+    0%{
+        transform: rotate(-45deg) scale(1.07);
+    }
+    80%{
+        transform: rotate(-45deg) scale(1.0);
+    }
+    100%{
+        transform: rotate(-45deg) scale(0.8)
+    }
+}
