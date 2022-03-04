@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+.fireworks-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.countdown {
+    color: white;
+    font-size: 5vh;
+    margin-bottom: 20vh;
+    font-family: 'Quicksand', sans-serif;
+    white-space: nowrap;
+}
+
+.monthly-text {
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 5vh;
+    font-family: 'Quicksand', sans-serif;
+    white-space: nowrap;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: none;
+    opacity: 0;
+}
+
+.monthly-text > div {
+    margin-top: 3vh;
+    color: #af2f8d;
+    font-size: 4.3vh;
+    font-family: "romantic", sans-serif;
+}
+
+@keyframes changebg {
+    from {background-color: #0b1522;}
+    to {background-color: black;}
+}
+
+@media only screen and (orientation: landscape) {
+    .countdown {
+        font-size: 7vh;
+    }
+}
