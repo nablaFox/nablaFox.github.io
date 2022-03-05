@@ -9,6 +9,7 @@
 
 body {
     background: #0b1522;
+    overflow-y: scroll;
 }
 
 .main-container {
