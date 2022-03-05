@@ -10,5 +10,7 @@ function pass(myPage) {
 function check() {
     if (document.querySelector('input').value == '1234') {
         window.open(page,'_self');
+        document.getElementById("navbar").style.display = "block";
+        document.getElementById("pass").style.display = "none";
     }
 }
