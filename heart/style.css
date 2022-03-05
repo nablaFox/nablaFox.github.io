@@ -86,6 +86,9 @@ body {
 
 /*Smartphones portrait*/
 @media only screen and (max-width: 450px) and (min-height: 500px) {
+    body {
+        zoom: 88%;
+    }
     #heart {
         height: 19vh;
         width: 19vh;
