@@ -12,6 +12,7 @@ function pass(myPage) {
 
 function check() {
     if (document.querySelector('input').value == '1234') {
+        document.querySelector('input').value == '';
         window.open(page,'_self');
         run = false;
     }
