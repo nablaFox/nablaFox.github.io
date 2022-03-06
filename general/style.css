@@ -109,6 +109,8 @@ input {
 @media only screen and (max-width: 1000px) and (min-width: 451px) and (max-height: 501px) {
     body {
         zoom: 88%;
+        height: 150vh;
+        overflow-y: scroll;
     }
     .main-container {
         padding-top: 1.6vh;
