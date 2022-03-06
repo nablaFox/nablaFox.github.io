@@ -114,6 +114,10 @@ input {
     }
     .main-container {
         padding-top: 1.6vh;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
     }
     ul.navbar {
         margin-bottom: 18.58vh;
