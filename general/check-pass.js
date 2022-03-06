@@ -1,4 +1,5 @@
 var page;
+var run = true;
 
 function pass(myPage) {
     document.getElementById("navbar").style.display = "none";
