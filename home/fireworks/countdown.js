@@ -1,14 +1,24 @@
-var eventDate = new Date("March 7, 2022 00:00:03").getTime();
-var countdown = document.getElementById("countdown");
+var currentDate = new Date();
+var monthEvent = currentDate.getMonth();
+var monthStrings = [ "January", "February", "March", "April", "May", "June", 
+"July", "August", "September", "October", "November", "December" ];
 
-let now = new Date().getTime();
+if (currentDate.getDate() > 7)
+  monthEvent += 1;
+
+var strEventDate = monthStrings[monthEvent] + " 7, 2022 00:00:03";
+var eventDate = new Date(strEventDate).getTime();
+
+let now = currentDate.getTime();
 let distance = eventDate - now;
 var days = Math.floor(distance / (1000 * 60 * 60 * 24));
 var h = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 var m = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 var s = Math.floor((distance % (1000 * 60)) / 1000);
 
-if (days <= 4 && distance > 0) {
+var countdown = document.getElementById("countdown");
+
+if (days <= 4 && distance >= 0) {
   countdown.style.display = "block";
   document.getElementById("navbar").style.display = "none";
   countdown.innerHTML = days + "d " + h + "h " + m + "m " + s + "s ";
