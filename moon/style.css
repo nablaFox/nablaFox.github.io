@@ -49,7 +49,7 @@ body {
     margin-bottom: 10vh;
     color:#a35399;
     font-size: 8vh;
-    transition: 1.5s all ease;
+    transition: 1s all ease;
 }
 
 .chat-box> h1.active, .chat-box> p.active {
