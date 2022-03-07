@@ -36,13 +36,13 @@ body {
     font-size: 7vh;
     color: #f2bdeb;
     text-align: center;
-    transform: translateY(-100px);
+    transform: translateY(-150px);
     transition: 1.5s all ease;
     opacity: 0;
 }
 
 .chat-box > p {
-    transform: translateY(100px);
+    transform: translateY(150px);
 }
 
 .chat-box > h1 {
@@ -70,7 +70,7 @@ body {
     background-color: #1f2c34;
     align-self: flex-start;
     max-width: 80vh;
-    transform: translateX(-100px);
+    transform: translateX(-150px);
     position: relative;
     opacity: 0;
     transition: 1.5s all ease;
