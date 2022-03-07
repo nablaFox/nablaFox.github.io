@@ -1,4 +1,4 @@
-var eventDate = new Date("April 7, 2022 11:32:3").getTime();
+var eventDate = new Date("March 7, 2022 00:00:03").getTime();
 var countdown = document.getElementById("countdown");
 
 let now = new Date().getTime();
