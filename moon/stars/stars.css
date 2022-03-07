@@ -1,0 +1,52 @@
+.sky {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.sky > p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  font-size: 5.5vw;
+  white-space: nowrap;
+}
+
+.star {
+  overflow-y: hidden;
+  --x: 0%;
+  --y: 0%;
+  --opacity: 1;
+  --size: 1;
+  --delay: 0s;
+  --color: #fff;
+
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  width: 2px;
+  height: 2px;
+  transform: scale(var(--size));
+  animation: blink 0.4s ease-in-out infinite alternate;
+  animation-delay: var(--delay);
+  opacity: var(--opacity);
+  border-radius: 50%;
+  background-color: var(--color);
+  box-shadow: 0 0 8px var(--color);
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+}
+
+@media only screen and (orientation: portrait) {
+  .sky > p {
+    font-size: 7vh;
+  }
+}

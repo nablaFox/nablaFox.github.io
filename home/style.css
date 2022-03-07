@@ -1,0 +1,122 @@
+body {
+    background: #0b1522;
+}
+
+.main-container {
+    padding-top: 1.3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-bottom: 15vh;
+    white-space: nowrap;
+    display: block;
+}
+
+ul.navbar > li {
+    display: inline;
+}
+
+ul.navbar > li a {
+    display: inline-block;
+    color: white;
+    padding: 0vh 3.5vh;
+    font-size: 8.5vh;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+ul.navbar > li a:hover {
+    transform: scale(1.2);
+    color: #d9d9d9;
+}
+
+input {
+    border: none;
+    width: 33vh;
+    height: 5vh;
+    background: white;
+    color: black;
+    font-size: 3vh;
+    margin-bottom: 16vh;
+    border-radius: 1vh;
+}
+
+#flower {
+    font-size: 11vh;
+}
+
+#pass {
+    display: none;
+    text-align: center;
+    font-size: 4.5vh;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+}
+
+#pass p {
+    margin: 0;
+}
+
+/*Smartphones portrait*/
+@media only screen and (max-width: 450px) and (min-height: 500px) {
+    .main-container {
+        padding-top: 1.07vh;
+    }
+    ul.navbar {
+        margin-bottom: 12.39vh;
+    }
+    ul.navbar > li a {
+        padding: 0vh 2.89vh;
+        font-size: 7.02vh;
+    }
+    input {
+        width: 27.26vh;
+        height: 4.13vh;
+    }
+    #flower {
+        font-size: 9.08vh;
+    }
+    #pass {
+        font-size: 3.7vh;
+    }
+}
+
+/*Smartphones landscape*/
+@media only screen and (max-width: 1000px) and (min-width: 451px) and (max-height: 501px) {
+    body {
+        zoom: 88%;
+    }
+    .main-container {
+        padding-top: 1.6vh;
+    }
+    ul.navbar {
+        margin-bottom: 18.58vh;
+    }
+    ul.navbar > li a {
+        padding: 0vh 4.33vh;
+        font-size: 10.53vh;
+    }
+    input {
+        width: 40.89vh;
+        height: 6.19vh;
+    }
+    #flower {
+        font-size: 13.63vh;
+    }
+    #pass {
+        font-size: 5.57vh;
+    }
+}

@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
+body {
+    margin: 0;
+    height: 300vh;
+    overflow-x: hidden;
+    background: linear-gradient(0deg, rgba(11,21,34,1) 23%, rgba(11,21,34,0.9164040616246498) 100%);
+}
+
+section {
+    overflow: hidden;
+    margin: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+   
+    width: 140vh;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+section > div {
+    margin-bottom: 2vh;
+    font-size: 3.5vh;
+    padding: 1vh;
+    border-radius: 1vh;
+    color: white;
+    font-family: "HelveticaNeue Light", Sans-Serif;
+}
+
+section > h1 {
+    align-self: center; 
+    max-width: 140vh;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 7vh;
+    color: #f2bdeb;
+    text-align: center;
+    transform: translateY(-150px);
+    transition: 1.5s all ease;
+    opacity: 0;
+}
+
+section > p {
+    align-self: center; 
+    max-width: 140vh;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 7vh;
+    color: #f2bdeb;
+    text-align: center;
+    transform: translateY(100px);
+    transition: 1.5s all ease;
+    opacity: 0;
+}
+
+section > h1.active, section > p.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.reveal-dx {
+    background-color: #005d4b;
+    align-self: flex-end;
+    transform: translateX(150px);
+    position: relative;
+    opacity: 0;
+    transition: 1.5s all ease;
+}
+
+.reveal-sx {
+    background-color: #1f2c34;
+    align-self: flex-start;
+    max-width: 80vh;
+    transform: translateX(-150px);
+    position: relative;
+    opacity: 0;
+    transition: 1.5s all ease;
+}
+
+.reveal-dx.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.reveal-sx.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#link {
+    max-width: 80vh;
+    font-size: 3vh;
+    background: #025043;
+    color: #91bbb4; 
+    border-radius: 3px;
+    margin-bottom: 1.5vh;
+    padding: 1.5vh;
+}
+
+/*Smartphones portrait*/
+@media only screen and (orientation: portrait) {
+    section {
+        width: 100%;
+    }
+    section > div {
+        font-size: 2.6vh;
+        max-width: 40vh;
+    }
+    section > p, section > h1{
+        font-size: 5vh;
+    }
+    .reveal-sx {
+        margin-left: 0.5vh;
+        max-width: 42.3vh;
+    }
+    .reveal-dx {
+        margin-right: 0.5vh;
+    }
+    #link {
+        font-size: 2.28vh;
+    }
+}

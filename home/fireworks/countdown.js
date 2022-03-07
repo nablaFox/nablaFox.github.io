@@ -1,4 +1,4 @@
-var currentDate = new Date();
+var currentDate = new Date("March 8, 2022 00:00:03");
 var monthEvent = currentDate.getMonth();
 var monthStrings = [ "January", "February", "March", "April", "May", "June", 
 "July", "August", "September", "October", "November", "December" ];
