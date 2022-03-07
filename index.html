@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="heart/style.css">
-    <link rel="stylesheet" href="heart/fade.css">
-    <link rel="stylesheet" href="fireworks/style.css">
-    <link rel="stylesheet" href="general/style.css">
+    <link rel="stylesheet" href="home/heart/style.css">
+    <link rel="stylesheet" href="home/general/fade.css">
+    <link rel="stylesheet" href="home/fireworks/style.css">
+    <link rel="stylesheet" href="home/general/style.css">
     <script src="https://kit.fontawesome.com/11e73bab8d.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google" content="notranslate">
 </head>
 <body>
-    
+
     <!-- Fireworks -->
     <div class="fireworks-container"></div>
-    <script src="fireworks/package/dist/fireworks.js"></script>
-    <script src="fireworks/setup.js"></script>
+    <script src="home/fireworks/package/dist/fireworks.js"></script>
+    <script src="home/fireworks/setup.js"></script>
     
-    <!-- Heart And Countdown -->
-    <script src="heart/fade.js"></script>
-    <script src="general/check-pass.js"></script>
+    <!-- Heart, Navbar and Countdown -->
+    <script src="home/general/fade.js"></script>
+    <script src="home/general/check-pass.js"></script>
     <div class="main-container">
         <div id="pass"><p>Password😔</p><input type="password"></div>
         <div id="navbar">
             <ul class="navbar">
-                <li><a onclick="pass('page-1/photo.html')"><i class="fa-solid fa-image"></i></a></li>
-                <li><a href="page-2/flower.html"><i class="bi bi-flower3" id="flower"></i></a></li>
-                <li><a onclick="pass('page-3/moon.html')"><i class="fa-regular fa-moon"></i></a></li>
+                <li><a onclick="pass('photo/photo.html')"><i class="fa-solid fa-image"></i></a></li>
+                <li><a href="flower/flower.html"><i class="bi bi-flower3" id="flower"></i></a></li>
+                <li><a onclick="pass('moon/moon.html')"><i class="fa-regular fa-moon"></i></a></li>
             </ul>
         </div>
         <div class="countdown" id="countdown">0d 0h 0m 0s</div>
-        <div id="heart" onclick="FadeInText('~Anto', 'signature'); check()"></div>
+        <div id="heart" onclick="FadeInText('~Anto', 'signature'); check();"></div>
         <div id="love-text">Ti Amo Peyton</div>
         <div id ="signature">~Anto</div>
     </div>
-
-    <script src="fireworks/countdown.js"></script>
     <div class="monthly-text" id="monthly-text">
         Auguri Pey ❤️ <br>
         <div>Buon Mesiversario</div>
     </div>
+    <script src="home/heart/heartbeat.js"></script>
+    <script src="home/fireworks/countdown.js"></script>
 
 </body>
 </html>
