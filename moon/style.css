@@ -42,7 +42,7 @@ body {
 }
 
 .chat-box > p {
-    transform: translateY(150px);
+    transform: translateY(100px);
 }
 
 .chat-box > h1 {
@@ -60,7 +60,7 @@ body {
 .reveal-dx {
     background-color: #005d4b;
     align-self: flex-end;
-    transform: translateX(150px);
+    transform: translateX(100px);
     position: relative;
     opacity: 0;
     transition: 1.5s all ease;
@@ -70,7 +70,7 @@ body {
     background-color: #1f2c34;
     align-self: flex-start;
     max-width: 80vh;
-    transform: translateX(-150px);
+    transform: translateX(-100px);
     position: relative;
     opacity: 0;
     transition: 1.5s all ease;
