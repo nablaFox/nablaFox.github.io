@@ -8,7 +8,9 @@ function pass(myPage) {
 }
 
 function check() {
-    if (document.querySelector('input').value == '1') {
+    if (document.querySelector('input').value == 'Fiorellino') {
         window.open(page,'_self');
+        document.getElementById("navbar").style.display = "block";
+        document.getElementById("pass").style.display = "none";
     }
 }
