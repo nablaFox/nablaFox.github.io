@@ -1,5 +1,5 @@
 var windowHeight = window.innerHeight;
-classes = ['.reveal-dx', '.reveal-sx', '.chat-box > h1', '.chat-box > p'];
+classes = ['.a-mess > div', '.p-mess > div', '.chat-box > h1', '.chat-box > p'];
 
 function reveal() {
     for (c in classes) {

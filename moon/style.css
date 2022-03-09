@@ -7,6 +7,7 @@ body {
     height: 500vh;
 }
 
+/*Chat Container*/
 .chat-box {
     overflow: hidden;
     position: absolute;
@@ -18,7 +19,6 @@ body {
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
 }
-
 .chat-box > h1, .chat-box > p {
     align-self: center;
     text-align: center;
@@ -26,7 +26,6 @@ body {
     max-width: 140vh;
     opacity: 0;
 }
-
 .chat-box > h1 {
     color:#a35399;
     font-size: 8vh;
@@ -34,7 +33,6 @@ body {
     transform: translateY(-15vh);
     transition: 1s all ease;
 }
-
 .chat-box > p {
     color: #f2bdeb;
     transform: translateY(3.5vh);
@@ -42,57 +40,59 @@ body {
     transition: 1.5s all ease;
 }
 
-.chat-box > div {
-    margin-bottom: 1vh;
-    font-size: 3.5vh;
-    padding: 1.5vh;
-    border-radius: 1.3vh;
-    color: white;
+/*Anto's and Pey's messages*/
+.a-mess, .p-mess {
+    display: flex;
+    flex-direction: column;
     font-family: "HelveticaNeue Light", Sans-Serif;
+    color: white;
+    font-size: 3.5vh;
+}
+.a-mess > div {
+    align-self: flex-end;
+    margin-bottom: 1vh;
+    padding: 1.5vh;
+    border-radius: 1.4vh;
+    background-color: #005d4b;
+    opacity: 0;
+    transform: translateX(15vh);
+    transition: 1.5s all ease;
+}
+.p-mess > div {
+    align-self: flex-start;
+    margin-bottom: 1vh;
+    padding: 1.5vh;
+    border-radius: 1.4vh;
+    background-color: #1f2c34;
+    max-width: 80vh;
+    opacity: 0;
+    transform: translateX(-15vh);
+    transition: 1.5s all ease;
 }
 
-.link-p, .link-a {
+/*Link messages*/
+#link-p, #link-a {
     max-width: 80vh;
     font-size: 3.2vh;
     background: #025043;
     color: #91bbb4;
-    border-radius: 1vh;
+    border-radius: 1.1vh;
     margin-bottom: 1.5vh;
     padding: 1.5vh;
     text-align: left;
 }
-
-.link-a {
+#link-a {
     background:#1e292f;
     color: #86959f;
 }
 
-.reveal-dx {
-    background-color: #005d4b;
-    align-self: flex-end;
-    transform: translateX(15vh);
-    position: relative;
-    opacity: 0;
-    transition: 1.5s all ease;
-}
-
-.reveal-sx {
-    background-color: #1f2c34;
-    align-self: flex-start;
-    max-width: 80vh;
-    transform: translateX(-15vh);
-    position: relative;
-    opacity: 0;
-    transition: 1.5s all ease;
-}
-
-.reveal-dx.active, .reveal-sx.active {
-    transform: translateX(0);
+/*Scrolling Animations*/
+.chat-box > h1.active, .chat-box > p.active {
+    transform: translateY(0);
     opacity: 1;
 }
-
-.chat-box> h1.active, .chat-box> p.active {
-    transform: translateY(0);
+.a-mess > div.active, .p-mess > div.active {
+    transform: translateX(0);
     opacity: 1;
 }
 
@@ -100,9 +100,6 @@ body {
 @media only screen and (orientation: portrait) {
     .chat-box {
         width: 100%;
-    }
-    .chat-box > div.title {
-        font-size: 6vh;
     }
     .chat-box > h1 {
         font-size: 5vh;
@@ -112,21 +109,23 @@ body {
     }
     .chat-box > p {
         font-size: 4.4vh;
-        padding-left: 2.1vh;
-        padding-right: 2.1vh;
+        padding-left: 2vh;
+        padding-right: 2vh;
     }
-    .chat-box > div {
-        font-size: 2.2vh;
+
+    .a-mess, .p-mess {
+        font-size: 2.2vh
+    }
+    .a-mess > div {
+        margin-right: 1vh;
         max-width: 37.5vh;
     }
-    .reveal-sx {
+    .p-mess > div {
         margin-left: 1vh;
-        max-width: 42.3vh;
+        max-width: 37.5vh;
     }
-    .reveal-dx {
-        margin-right: 1vh;
-    }
-    .link-p, .link-a {
+
+    #link-a, #link-p {
         font-size: 2vh;
     }
 }
