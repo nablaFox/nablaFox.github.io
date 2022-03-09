@@ -46,6 +46,7 @@
 }
 
 @media only screen and (orientation: portrait) {
+
   .sky > p {
     font-size: 6.5vh;
   }

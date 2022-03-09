@@ -1,23 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
 
 body {
-    margin: 0;
-    height: 500vh;
     overflow-x: hidden;
-    background: linear-gradient(0deg, rgba(11,21,34,1) 62%, rgba(11,21,34,0.9023984593837535) 100%);  
+    margin: 0;
+    background: linear-gradient(0deg, rgba(11,21,34,1) 62%, rgba(11,21,34,0.9023984593837535) 100%);
+    height: 500vh;
 }
 
 .chat-box {
     overflow: hidden;
-    margin: 0;
     position: absolute;
     display: flex;
     flex-direction: column;
-   
+    margin: 0;
     width: 140vh;
     left: 50%;
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
+}
+
+.chat-box > h1, .chat-box > p {
+    align-self: center;
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+    max-width: 140vh;
+    opacity: 0;
+}
+
+.chat-box > h1 {
+    color:#a35399;
+    font-size: 8vh;
+    margin-bottom: 10vh;
+    transform: translateY(-15vh);
+    transition: 1s all ease;
+}
+
+.chat-box > p {
+    color: #f2bdeb;
+    transform: translateY(3.5vh);
+    font-size: 7vh;
+    transition: 1.5s all ease;
 }
 
 .chat-box > div {
@@ -29,38 +51,26 @@ body {
     font-family: "HelveticaNeue Light", Sans-Serif;
 }
 
-.chat-box > h1, .chat-box > p {
-    align-self: center; 
-    max-width: 140vh;
-    font-family: 'Fredoka', sans-serif;
-    font-size: 7vh;
-    color: #f2bdeb;
-    text-align: center;
-    transform: translateY(-100px);
-    transition: 1.5s all ease;
-    opacity: 0;
+.link-p, .link-a {
+    max-width: 80vh;
+    font-size: 3.2vh;
+    background: #025043;
+    color: #91bbb4;
+    border-radius: 1vh;
+    margin-bottom: 1.5vh;
+    padding: 1.5vh;
+    text-align: left;
 }
 
-.chat-box > p {
-    transform: translateY(100px);
-}
-
-.chat-box > h1 {
-    margin-bottom: 10vh;
-    color:#a35399;
-    font-size: 8vh;
-    transition: 1s all ease;
-}
-
-.chat-box> h1.active, .chat-box> p.active {
-    transform: translateY(0);
-    opacity: 1;
+.link-a {
+    background:#1e292f;
+    color: #86959f;
 }
 
 .reveal-dx {
     background-color: #005d4b;
     align-self: flex-end;
-    transform: translateX(100px);
+    transform: translateX(15vh);
     position: relative;
     opacity: 0;
     transition: 1.5s all ease;
@@ -70,36 +80,20 @@ body {
     background-color: #1f2c34;
     align-self: flex-start;
     max-width: 80vh;
-    transform: translateX(-100px);
+    transform: translateX(-15vh);
     position: relative;
     opacity: 0;
     transition: 1.5s all ease;
 }
 
-.reveal-dx.active {
+.reveal-dx.active, .reveal-sx.active {
     transform: translateX(0);
     opacity: 1;
 }
 
-.reveal-sx.active {
-    transform: translateX(0);
+.chat-box> h1.active, .chat-box> p.active {
+    transform: translateY(0);
     opacity: 1;
-}
-
-#link-p, #link-a {
-    max-width: 80vh;
-    font-size: 3vh;
-    background: #025043;
-    color: #91bbb4; 
-    border-radius: 1vh;
-    margin-bottom: 1.5vh;
-    padding: 1.5vh;
-    text-align: left;
-}
-
-#link-a {
-    background:#1e292f;
-    color: #86959f;
 }
 
 /*Smartphones portrait*/
@@ -107,20 +101,23 @@ body {
     .chat-box {
         width: 100%;
     }
-    .chat-box > div {
-        font-size: 2.6vh;
-        max-width: 40vh;
-    }
-    .chat-box > p{
-        font-size: 5vh;
-        padding-left: 3vh;
-        padding-right: 3vh;
+    .chat-box > div.title {
+        font-size: 6vh;
     }
     .chat-box > h1 {
-        font-size: 5.8vh;
+        font-size: 5vh;
         margin-bottom: 7.14vh;
         padding-left: 2vh;
         padding-right: 2vh;
+    }
+    .chat-box > p {
+        font-size: 4.4vh;
+        padding-left: 2.5vh;
+        padding-right: 2.5vh;
+    }
+    .chat-box > div {
+        font-size: 2.2vh;
+        max-width: 37.5vh;
     }
     .reveal-sx {
         margin-left: 1vh;
@@ -129,7 +126,7 @@ body {
     .reveal-dx {
         margin-right: 1vh;
     }
-    #link-p, #link-a {
-        font-size: 2.28vh;
+    .link-p, .link-a {
+        font-size: 2vh;
     }
 }

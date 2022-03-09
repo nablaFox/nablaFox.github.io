@@ -26,5 +26,5 @@ const generateStars = (parentElement, starNumber = 500) => {
   };
   
   const sky = document.querySelector(".sky");
-  generateStars(sky, 60);
+  generateStars(sky, 80);
   
