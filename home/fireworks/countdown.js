@@ -1,12 +1,13 @@
 var currentDate = new Date();
 var monthEvent = currentDate.getMonth();
+var dateEvent = 7;
 var monthStrings = [ "January", "February", "March", "April", "May", "June", 
 "July", "August", "September", "October", "November", "December" ];
 
-if (currentDate.getDate() > 7)
+if (currentDate.getDate() > dateEvent)
   monthEvent += 1;
 
-var strEventDate = monthStrings[monthEvent] + " 7, 2022 00:00:03";
+var strEventDate = monthStrings[monthEvent] + dateEvent + ", 2022 00:00:03";
 var eventDate = new Date(strEventDate).getTime();
 
 let now = currentDate.getTime();
