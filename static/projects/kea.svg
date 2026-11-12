@@ -1,0 +1,22 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 64 64"
+  fill="none"
+  stroke="black"
+  stroke-width="1.2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <defs>
+    <mask id="joint-cutout" mask-type="luminance" stroke="none">
+      <rect width="64" height="64" fill="white" />
+      <circle cx="32" cy="44" r="2" fill="black" />
+    </mask>
+  </defs>
+  <g mask="url(#joint-cutout)">
+    <path d="M12 45h40" />
+    <path d="M32 13v27" stroke-dasharray="2 4" stroke-opacity="0.45" />
+    <path d="M13 17 32 44 51 17m-7 2 7-2 .5 7" />
+  </g>
+  <circle cx="32" cy="44" r="2" />
+</svg>

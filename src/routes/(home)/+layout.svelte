@@ -1,8 +1,10 @@
 <script lang="ts">
 	import type { LayoutProps } from './$types'
 
+	import Footer from './Footer.svelte'
 	import Header from './Header.svelte'
 	import Hero from './Hero.svelte'
+	import SectionSwitcher from './SectionSwitcher.svelte'
 
 	let { children }: LayoutProps = $props()
 </script>
@@ -15,6 +17,10 @@
 	<Hero />
 
 	<main class="xl:border-r">
+		<SectionSwitcher class="px-5 lg:hidden" />
+
 		{@render children()}
+
+		<Footer />
 	</main>
 </div>

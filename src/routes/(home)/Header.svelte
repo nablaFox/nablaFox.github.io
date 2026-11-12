@@ -1,21 +1,15 @@
 <script lang="ts">
-	import { resolve } from '$app/paths'
-	import { page } from '$app/state'
-	import type { PageRouteId } from '$app/types'
-
 	import ArrowIcon from '#lib/components/ArrowIcon.svelte'
 	import GithubIcon from '#lib/components/GithubIcon.svelte'
-
-	const links = [
-		{ route: '/(home)', label: '/projects' },
-		{ route: '/(home)/writing', label: '/writing' }
-	] satisfies { route: PageRouteId; label: string }[]
+	import ThemeSwitcher from '#lib/components/ThemeSwitcher.svelte'
+	import SectionSwitcher from './SectionSwitcher.svelte'
 </script>
 
 <header
 	class="
-    sticky top-0 mx-auto hidden h-(--header-height) max-w-7xl grid-cols-[45fr_55fr] border-b before:absolute before:right-full
-    before:-bottom-px before:w-screen before:border-b lg:grid xl:border-r
+    sticky top-0 z-10 mx-auto hidden h-(--header-height) max-w-7xl grid-cols-[45fr_55fr] border-b bg-bg before:absolute
+    before:right-full before:-bottom-px before:w-screen before:border-b lg:grid
+    xl:border-r
   "
 >
 	<div class="flex items-center border-r px-20">
@@ -33,26 +27,16 @@
 	</div>
 
 	<div class="grid grid-cols-[8fr_2fr]">
-		<nav class="flex items-center gap-4 border-r px-8 text-sm">
-			{#each links as { route, label } (route)}
-				{@const active = page.route.id === route}
+		<SectionSwitcher class="border-r px-8" />
 
-				<a
-					href={resolve(route)}
-					aria-current={active ? 'page' : undefined}
-					class={[
-						'ease flex min-h-11 items-center font-mono text-xs font-medium transition-colors duration-180 hover:text-fg focus-visible:text-fg',
-						'decoration-accent decoration-1 underline-offset-[6px]',
-						{ 'text-fg underline': active, 'text-muted': !active }
-					]}
-				>
-					{label}
-				</a>
-			{/each}
-		</nav>
-
-		<button class="mx-2 flex min-h-12 cursor-pointer items-center justify-center self-center">
-			L
-		</button>
+		<ThemeSwitcher
+			class="
+        flex h-full w-full cursor-pointer items-center
+        justify-center hover:bg-hover
+        focus-visible:outline-2
+        focus-visible:outline-offset-[-5px]
+        focus-visible:outline-accent
+      "
+		/>
 	</div>
 </header>

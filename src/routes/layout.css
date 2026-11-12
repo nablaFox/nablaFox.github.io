@@ -22,6 +22,7 @@
   --color-muted: #aaa9a6;
   --color-quiet: #858481;
   --color-line: #292929;
+  --color-hover: #181818;
   --color-accent: #c3b7d6;
   --font-sans: "Geist", sans-serif;
   --font-mono: "Geist Mono", monospace;
@@ -63,6 +64,7 @@
   text-decoration: underline;
   text-decoration-color: var(--color-line);
   text-underline-offset: 5px;
+  text-decoration-thickness: 1px;
   transition: text-decoration-color 180ms ease;
 
   &:hover,
