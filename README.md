@@ -1,6 +1,5 @@
 ■ todo
 
-- complete lissajous curve component
 - link email
 - link linkedin account
 - deploy

@@ -63,7 +63,7 @@
 	<div class="hidden items-center justify-center lg:flex">
 		<span
 			aria-hidden="true"
-			class="block size-15 bg-accent/70"
+			class="block size-15 bg-accent/80"
 			style={`mask: url('/projects/${name.toLowerCase()}.svg') center / contain no-repeat`}
 		></span>
 	</div>
