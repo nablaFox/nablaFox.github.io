@@ -1,50 +1,7 @@
-■ todo
+# <img src="src/lib/assets/favicon.svg" width="24" height="24" alt="$"> cd ~
 
-- link email
-- link linkedin account
-- deploy
+My corner of the internet.
 
-■ cv inspiration
+[Take a look ↗](https://nablafox.github.io)
 
-- https://alexwang.ai/posts/associative-memory/
-- https://andrewkchan.dev/
-- https://karrisaarinen.com/
-- https://royfish.dev/
-- https://paco.me/
-- https://antfu.me/
-- https://brand.io/
-- https://sunshowers.io/
-
-■ completed projects
-
-- hint 
-- kea
-- etna, ignis, y3
-- green hearts
-- fluo
-- dotfiles
-
-■ planned projects
-
-- rocket simulation
-- ai training rocket to land on a platform
-- pendulum balancing
-- drone controlling
-- robot simulation walking (paper with nice transparent rendering)
-- ray tracing
-- procedural trees
-- hopfield nets
-- hopfield networks is all you need
-- fractal rendering
-- 99.hs
-- types theory
-- more programming theory
-- physical based deep learning
-- little book of deep learning
-- dynamics in pga
-- mit analytical mechanics
-- cpu simulation
-- rigid body simulation
-- soft body simulation
-- smoke simulation
-- neuronal ca
+Built with SvelteKit, Tailwind CSS and <img src=".github/assets/readme-heart.svg" width="12" height="12" alt="love">
