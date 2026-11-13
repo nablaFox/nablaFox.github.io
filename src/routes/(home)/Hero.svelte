@@ -34,7 +34,7 @@
 	</div>
 
 	<p class="mt-3 text-sm text-muted lg:mt-6 lg:text-lg">
-		I like exploring ideas, usually with code;
+		hello world, I like math and making things with code;
 	</p>
 
 	<div class="flex h-full items-center justify-between lg:flex-col lg:items-start">

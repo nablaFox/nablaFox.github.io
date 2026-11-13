@@ -12,10 +12,13 @@
 			hour: '2-digit',
 			minute: '2-digit'
 		})
+
 		const update = () => (time = clock.format(Date.now()))
 
 		update()
+
 		const interval = setInterval(update, 1_000)
+
 		return () => clearInterval(interval)
 	})
 </script>
