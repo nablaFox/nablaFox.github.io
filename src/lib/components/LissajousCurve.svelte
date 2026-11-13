@@ -1,4 +1,4 @@
-<button class="cursor-pointer">
+<button class="hidden cursor-pointer sm:block" aria-label="lissajous curve">
 	<svg
 		viewBox="0 0 96 72"
 		aria-hidden="true"

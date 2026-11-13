@@ -31,8 +31,9 @@
 
 		<ThemeSwitcher
 			class="
-        flex h-full w-full cursor-pointer items-center
-        justify-center hover:bg-hover
+        flex
+        h-full w-full cursor-pointer items-center justify-center
+        text-quiet hover:bg-hover
         focus-visible:outline-2
         focus-visible:outline-offset-[-5px]
         focus-visible:outline-accent

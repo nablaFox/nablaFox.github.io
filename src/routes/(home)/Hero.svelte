@@ -1,6 +1,5 @@
 <script>
 	import ArrowIcon from '#lib/components/ArrowIcon.svelte'
-	import GithubIcon from '#lib/components/GithubIcon.svelte'
 	import LissajousCurve from '#lib/components/LissajousCurve.svelte'
 </script>
 
@@ -12,12 +11,10 @@
 		<span class="text-muted">whoami</span>
 	</p>
 
-	<h1 class="mb-4 text-4xl font-medium lg:mb-5 lg:text-6xl">Antonio Farese</h1>
+	<h1 class="text-4xl font-medium lg:text-6xl">Antonio Farese</h1>
 
-	<p class="text-sm text-muted lg:text-lg">Software developer. Curious by default.</p>
-
-	<div class="mt-3 flex items-center gap-5 text-xs lg:mt-7 lg:text-sm">
-		<a href="" class="inline-flex min-h-11 items-center link-underline lg:min-h-0">Email</a>
+	<div class="flex items-center gap-5 text-xs lg:mt-2 lg:text-sm">
+		<a href="" class="inline-flex min-h-11 items-center link-underline lg:min-h-0">hey@antof.dev</a>
 		<a href="" class="inline-flex min-h-11 items-center link-underline lg:min-h-0">LinkedIn</a>
 
 		<a
@@ -25,11 +22,15 @@
 			target="_blank"
 			rel="noopener noreferrer"
 			aria-label="github profile"
-			class="inline-flex min-h-11 items-center gap-2 link-underline lg:hidden"
+			class="inline-flex min-h-11 items-center gap-2 link-underline"
 		>
 			GitHub
 		</a>
 	</div>
+
+	<p class="mt-3 text-sm text-muted lg:mt-6 lg:text-lg">
+		I like exploring ideas, usually with code;
+	</p>
 
 	<div class="flex h-full items-center justify-between lg:flex-col lg:items-start">
 		<a
@@ -46,7 +47,7 @@
 				<ArrowIcon size={12} />
 			</div>
 
-			<span class="font-mono text-xs text-quiet"># arch rice</span>
+			<span class="font-mono text-xs text-quiet"># my arch 🍚</span>
 		</a>
 
 		<LissajousCurve />

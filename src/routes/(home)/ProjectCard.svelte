@@ -11,13 +11,13 @@
 </script>
 
 <a
-	class="group block -outline-offset-5 not-first:border-t hover:bg-hover lg:grid lg:grid-cols-[8fr_2fr]"
+	class="group block -outline-offset-5 not-first:border-t hover:bg-hover lg:border-corner lg:grid lg:grid-cols-[8fr_2fr]"
 	rel="noopener noreferrer"
 	{href}
 >
 	<div class="p-5 lg:border-r lg:px-8 lg:py-10">
 		<div class="flex items-center gap-2.5">
-			<h3 class="text-xl font-medium link-underline decoration-transparent">
+			<h3 class="text-lg font-medium link-underline decoration-transparent lg:text-xl">
 				{name}
 
 				{#if featured}
@@ -54,7 +54,7 @@
 	<div class="hidden lg:flex lg:items-center lg:justify-center">
 		<span
 			aria-hidden="true"
-			class="block size-18 bg-accent/70"
+			class="block size-15 bg-accent/70"
 			style={`mask: url('/projects/${name.toLowerCase()}.svg') center / contain no-repeat`}
 		></span>
 	</div>

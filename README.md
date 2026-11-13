@@ -1,3 +1,10 @@
+■ todo
+
+- complete lissajous curve component
+- link email
+- link linkedin account
+- deploy
+
 ■ cv inspiration
 
 - https://alexwang.ai/posts/associative-memory/
@@ -41,3 +48,4 @@
 - rigid body simulation
 - soft body simulation
 - smoke simulation
+- neuronal ca
