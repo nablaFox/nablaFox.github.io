@@ -14,7 +14,7 @@
 >
 	<div class="flex items-center border-r px-20">
 		<a
-			aria-label="github profile"
+			aria-label="@nablaFox on GitHub (opens in a new tab)"
 			target="_blank"
 			rel="noopener noreferrer"
 			class="group inline-flex min-h-11 items-center gap-2.5 text-quiet"
@@ -30,14 +30,7 @@
 		<SectionSwitcher class="border-r px-8" />
 
 		<ThemeSwitcher
-			class="
-        flex
-        h-full w-full cursor-pointer items-center justify-center
-        text-quiet hover:bg-hover
-        focus-visible:outline-2
-        focus-visible:outline-offset-[-5px]
-        focus-visible:outline-accent
-      "
+			class="flex size-full items-center justify-center text-quiet hover:bg-hover focus-visible:-outline-offset-5"
 		/>
 	</div>
 </header>

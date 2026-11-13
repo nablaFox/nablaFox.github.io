@@ -21,19 +21,14 @@
 </script>
 
 <footer
-	class="mb-8 flex items-center justify-between gap-4 px-5 lg:mt-0 lg:min-h-(--header-height) lg:px-8"
+	class="mb-8 flex items-center justify-between gap-4 px-5 lg:min-h-(--header-height) lg:px-8"
 >
-	<div class="flex gap-4">
-		<div class="flex items-center">
-			<span class="font-mono text-xs text-quiet">© 2026</span>
-		</div>
+	<div class="flex gap-4 text-xs text-quiet">
+		<span class="flex items-center font-mono">© 2026</span>
 
-		<a class="text-xs text-quiet link-underline" href={resolve('/(home)')}> RSS </a>
+		<a class="link-underline" href={resolve('/(home)')}>RSS</a>
 
-		<span
-			title="Somewhere in Italy"
-			class="inline-flex items-center gap-2 font-mono text-xs text-quiet"
-		>
+		<span title="Somewhere in Italy" class="inline-flex items-center gap-2 font-mono">
 			<span class="sr-only">Local time in Italy:</span>
 			<span class="tabular-nums">{time || '--:--'}</span>
 			<svg
@@ -51,9 +46,7 @@
 		</span>
 	</div>
 
-	<div class="flex items-center gap-3">
-		<ThemeSwitcher
-			class="flex size-11 items-center justify-center text-quiet transition-colors hover:text-fg focus-visible:text-fg lg:hidden"
-		/>
-	</div>
+	<ThemeSwitcher
+		class="flex size-11 items-center justify-center text-quiet transition-colors hover:text-fg focus-visible:text-fg lg:hidden"
+	/>
 </footer>

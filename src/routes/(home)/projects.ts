@@ -18,11 +18,11 @@ export const projects = [
   },
 
   {
-    name: "Fluo",
-    year: "2026",
-    description: "Functional vulkan renderer written in Gleam",
-    tags: ["Gleam", "Vulkan"],
-    href: "https://github.com/nablaFox/fluo",
+    name: "Etna",
+    year: "2025",
+    description: "Vulkan graphics engine written in C++ 20",
+    tags: ["Cpp", "Vulkan"],
+    href: "https://github.com/nablaFox/etna",
     featured: false
   }
 ]

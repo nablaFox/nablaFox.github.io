@@ -4,25 +4,30 @@
 </script>
 
 <aside
-	class="flex flex-col px-5 pt-8 pb-0 lg:sticky lg:top-(--header-height) lg:h-[calc(100dvh-var(--header-height))] lg:self-start lg:border-r lg:p-20"
+	aria-labelledby="profile-name"
+	class="flex flex-col px-5 pt-8 lg:sticky lg:top-(--header-height) lg:h-[calc(100dvh-var(--header-height))] lg:self-start lg:border-r lg:p-20"
 >
 	<p class="mb-4.5 font-mono text-xs">
-		<span class="font-medium text-accent">$</span>
+		<span aria-hidden="true" class="font-medium text-accent">$</span>
 		<span class="text-muted">whoami</span>
 	</p>
 
-	<h1 class="text-4xl font-medium lg:text-6xl">Antonio Farese</h1>
+	<h1 id="profile-name" class="text-4xl font-medium lg:text-6xl">Antonio Farese</h1>
 
 	<div class="flex items-center gap-5 text-xs lg:mt-2 lg:text-sm">
-		<a href="" class="inline-flex min-h-11 items-center link-underline lg:min-h-0">hey@antof.dev</a>
-		<a href="" class="inline-flex min-h-11 items-center link-underline lg:min-h-0">LinkedIn</a>
+		<a
+			href="mailto:hey@antof.dev"
+			class="inline-flex min-h-11 items-center link-underline lg:min-h-0">hey@antof.dev</a
+		>
+
+		<span class="inline-flex min-h-11 items-center link-underline lg:min-h-0">LinkedIn</span>
 
 		<a
 			href="https://github.com/nablaFox"
 			target="_blank"
 			rel="noopener noreferrer"
-			aria-label="github profile"
-			class="inline-flex min-h-11 items-center gap-2 link-underline"
+			aria-label="GitHub profile (opens in a new tab)"
+			class="inline-flex min-h-11 items-center link-underline"
 		>
 			GitHub
 		</a>
@@ -36,7 +41,7 @@
 		<a
 			href="https://github.com/nablaFox/dotfiles"
 			class="group mt-6 mb-4 block w-fit lg:mt-11"
-			aria-label="arch linux rice"
+			aria-label="~/.config: Arch Linux dotfiles on GitHub (opens in a new tab)"
 			target="_blank"
 			rel="noopener noreferrer"
 		>
